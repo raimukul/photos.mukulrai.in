@@ -232,7 +232,7 @@ export default function Example() {
                         <Menu.Item>
                           {({ active }) => (
                             <a
-                              href="#"
+                              href="https://www.mukulrai.in"
                               className={classNames(
                                 active ? "bg-gray-100" : "",
                                 "block px-4 py-2 text-sm text-gray-700"
@@ -243,7 +243,7 @@ export default function Example() {
                           )}
                         </Menu.Item>
                        
-                        <Menu.Item>
+                        {/* <Menu.Item>
                           {({ active }) => (
                             <a
                               href="#"
@@ -255,7 +255,7 @@ export default function Example() {
                               Sign out
                             </a>
                           )}
-                        </Menu.Item>
+                        </Menu.Item> */}
                       </Menu.Items>
                     </Transition>
                   </Menu>
