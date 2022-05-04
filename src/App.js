@@ -3,7 +3,7 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
 import "./App.css";
 const navigation = [
-  { name: "Dashboard", href: "/", current: true },
+  { name: "My Homepage", href: "/", current: true },
   // { name: "Team", href: "/", current: false },
   // { name: "Projects", href: "/", current: false },
   // { name: "Calendar", href: "/", current: false },
@@ -17,6 +17,14 @@ const products = [
       "https://firebasestorage.googleapis.com/v0/b/mukul-6599e.appspot.com/o/photo%20(5).jpg?alt=media&token=5fa522af-bdb7-483b-90c5-99d58457d9b7",
     imageAlt: "Front of men's Basic Tee in black.",
   },
+  // {
+  //   id: 21,
+  //   name: "Basic Tee",
+  //   href: "/",
+  //   imageSrc:
+  //     "https://firebasestorage.googleapis.com/v0/b/mukul-6599e.appspot.com/o/neeeewww.jpg?alt=media&token=ff3f72d0-a5f1-498b-9551-4a6ebe2877ea",
+  //   imageAlt: "Front of men's Basic Tee in black.",
+  // },
   {
     id: 2,
     name: "Basic Tee",
@@ -206,7 +214,7 @@ export default function Example() {
                         <span className="sr-only ">Open user menu</span>
                         <img
                           className="h-8 w-8 rounded-full"
-                          src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                          src="./photo__5__RuR_icon.ico"
                           alt=""
                         />
                       </Menu.Button>
@@ -234,19 +242,7 @@ export default function Example() {
                             </a>
                           )}
                         </Menu.Item>
-                        <Menu.Item>
-                          {({ active }) => (
-                            <a
-                              href="#"
-                              className={classNames(
-                                active ? "bg-gray-100" : "",
-                                "block px-4 py-2 text-sm text-gray-700"
-                              )}
-                            >
-                              Settings
-                            </a>
-                          )}
-                        </Menu.Item>
+                       
                         <Menu.Item>
                           {({ active }) => (
                             <a
